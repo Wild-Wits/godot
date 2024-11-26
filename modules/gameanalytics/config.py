@@ -43,7 +43,7 @@ def configure(env):
         print("here!!!")
         env.Append(LIBPATH=["#modules/gameanalytics/cpp/lib/osx"])
         env.Append(LIBS=["libGameAnalytics.dylib"])
-        env.Append(RPATH=["."])
+        #env.Append(RPATH=["."])
     elif env["platform"] == "x11":
         env.Append(LIBPATH=["#modules/gameanalytics/cpp/lib/linux"])
         env.Append(LIBS=["libGameAnalytics.so", "libcurl.so", "libssl.so", "libcrypto.so"])
